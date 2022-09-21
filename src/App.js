@@ -1,9 +1,13 @@
 import './App.css';
-// color pallete https://coolors.co/fdfffc-da7635-f1d302-050517
+
+import Home from './Pages/Home';
+import Testing from './Pages/Testing';
+
 function App() {
+  // color pallete https://coolors.co/161f24-bdaca2-ab9586-674b40
   return (
     <div className="App">
-      APP 
+      <Home />
     </div>
   );
 }
