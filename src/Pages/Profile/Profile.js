@@ -1,7 +1,8 @@
 import React from 'react';
 import './Profile.css';
 import { Link } from 'react-router-dom';
-import testImg from '../../img/test.jpg'
+import testImg from '../../img/test.jpg';
+import profImg from '../../img/abaddon.png';
 
 const Profile = () => {
   return (
@@ -43,7 +44,7 @@ const Profile = () => {
                 </ul>
             </div>
             <div className="main">
-                <div className="profile-home">
+                <div className="profile-blogs-list">
                     <div className="blog-card">
                         <p className="timeago">2 days ago</p>
                         
@@ -109,7 +110,37 @@ const Profile = () => {
                 </div>
             </div>
             <div className="profile-info">
-                info
+                <form className='from-profile-search'>
+                    <div className="input-container">
+                        <span className="mdi mdi-magnify"></span>
+                        <input type="text" name="" id="" />
+                    </div>
+                </form>
+                <img src={profImg} alt="" srcset="" />
+                <div className="info">
+                    <p className="full-name">
+                        This Is Full Name
+                    </p>
+
+                    <p className="followers-counter">
+                        6.5K Followers
+                    </p>
+
+                    <p className="introduction">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem accusamus esse! Fuga consequatur voluptate doloribus neque quisquam.
+                    </p>
+                </div>
+
+                <div className="buttons">
+                    <button className="follow-btn">
+                        Follow
+                    </button>
+
+                    <button className="contact-btn">
+                        Send a message
+                    </button>
+                </div>
+
             </div>
         </div>
     </div>
